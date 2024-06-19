@@ -14,7 +14,8 @@ test("Suma 1 + 2 es igual a 3", () => {
 // toEqual
 
 test("Compara objetos", () => {
-  expect(crearUsuario("Alice")).toEqual({ name: "Alice" });
+  var nombre = "Alice";
+  expect(crearUsuario(nombre)).toEqual({ name: nombre });
 });
 
 // toBeNull
@@ -29,14 +30,9 @@ test("Verifica que es mayor", () => {
   expect(mayorQue(10, 5)).toBeGreaterThan(10);
 });
 
-// toBeGreaterThanOrEqual
-
-test("Verifica que es mayor o igual", () => {
-  expect(10).toBeGreaterThanOrEqual(10);
-});
-
 // toHaveLength
 
 test("Verifica la longitud", () => {
-  expect(longitud("Hello")).toHaveLength(5);
+  var palabra = "Hello";
+  expect(longitud(palabra)).toHaveLength(5);
 });
